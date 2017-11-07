@@ -10,9 +10,11 @@ Installation
 ------------
 
 ``` r
+install.packages("devtools") 
 library(devtools)
 
-install_github("sdchandra/CNAclinic")
+install_github("sdchandra/CNAclinic", build_vignettes = TRUE))
+library(CNAclinic)
 ```
 
 Tutorial
@@ -504,8 +506,8 @@ sessionInfo()
     ##  [1] Biobase_2.34.0                         
     ##  [2] CGHcall_2.36.0                         
     ##  [3] QDNAseq_1.10.0                         
-    ##  [4] R.utils_2.5.0                          
-    ##  [5] assertthat_0.1                         
+    ##  [4] R.utils_2.6.0                          
+    ##  [5] assertthat_0.2.0                       
     ##  [6] stats4_3.3.3                           
     ##  [7] Rsamtools_1.26.2                       
     ##  [8] yaml_2.1.14                            
@@ -514,74 +516,79 @@ sessionInfo()
     ## [11] RSQLite_1.1-2                          
     ## [12] backports_1.0.5                        
     ## [13] lattice_0.20-35                        
-    ## [14] limma_3.30.13                          
-    ## [15] digest_0.6.12                          
-    ## [16] GenomicRanges_1.26.4                   
-    ## [17] XVector_0.14.1                         
-    ## [18] colorspace_1.3-2                       
-    ## [19] htmltools_0.3.6                        
-    ## [20] Matrix_1.2-8                           
-    ## [21] R.oo_1.21.0                            
-    ## [22] plyr_1.8.4                             
-    ## [23] pcaPP_1.9-61                           
-    ## [24] TxDb.Hsapiens.UCSC.hg38.knownGene_3.4.0
-    ## [25] XML_3.98-1.6                           
-    ## [26] biomaRt_2.30.0                         
-    ## [27] zlibbioc_1.20.0                        
-    ## [28] xtable_1.8-2                           
-    ## [29] mvtnorm_1.0-6                          
-    ## [30] scales_0.4.1                           
-    ## [31] chemometrics_1.4.2                     
-    ## [32] BiocParallel_1.8.2                     
-    ## [33] tibble_1.3.0                           
-    ## [34] annotate_1.52.1                        
-    ## [35] IRanges_2.8.2                          
-    ## [36] ggplot2_2.2.1                          
-    ## [37] SummarizedExperiment_1.4.0             
-    ## [38] GenomicFeatures_1.26.4                 
-    ## [39] nnet_7.3-12                            
-    ## [40] BiocGenerics_0.20.0                    
-    ## [41] lazyeval_0.2.0                         
-    ## [42] magrittr_1.5                           
-    ## [43] mclust_5.2.3                           
-    ## [44] memoise_1.0.0                          
-    ## [45] evaluate_0.10                          
-    ## [46] R.methodsS3_1.7.1                      
-    ## [47] MASS_7.3-45                            
-    ## [48] class_7.3-14                           
-    ## [49] tools_3.3.3                            
-    ## [50] data.table_1.10.4                      
-    ## [51] org.Hs.eg.db_3.4.0                     
-    ## [52] matrixStats_0.52.1                     
-    ## [53] stringr_1.2.0                          
-    ## [54] S4Vectors_0.12.2                       
-    ## [55] munsell_0.4.3                          
-    ## [56] AnnotationDbi_1.36.2                   
-    ## [57] Biostrings_2.42.1                      
-    ## [58] pls_2.6-0                              
-    ## [59] som_0.3-5.1                            
-    ## [60] e1071_1.6-8                            
-    ## [61] GenomeInfoDb_1.10.3                    
-    ## [62] QDNAseq.hg19_1.4.0                     
-    ## [63] CGHbase_1.34.0                         
-    ## [64] grid_3.3.3                             
-    ## [65] RCurl_1.95-4.8                         
-    ## [66] marray_1.52.0                          
-    ## [67] bitops_1.0-6                           
-    ## [68] rmarkdown_1.6                          
-    ## [69] DNAcopy_1.48.0                         
-    ## [70] gtable_0.2.0                           
-    ## [71] lars_1.2                               
-    ## [72] DBI_0.6-1                              
-    ## [73] R6_2.2.0                               
-    ## [74] GenomicAlignments_1.10.1               
-    ## [75] knitr_1.15.1                           
-    ## [76] dplyr_0.5.0                            
-    ## [77] rtracklayer_1.34.2                     
-    ## [78] rprojroot_1.2                          
-    ## [79] stringi_1.1.5                          
-    ## [80] TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2
-    ## [81] parallel_3.3.3                         
-    ## [82] Rcpp_0.12.10                           
-    ## [83] rpart_4.1-10                           
-    ## [84] DEoptimR_1.0-8
+    ## [14] glue_1.2.0                             
+    ## [15] limma_3.30.13                          
+    ## [16] digest_0.6.12                          
+    ## [17] GenomicRanges_1.26.4                   
+    ## [18] XVector_0.14.1                         
+    ## [19] colorspace_1.3-2                       
+    ## [20] htmltools_0.3.6                        
+    ## [21] Matrix_1.2-8                           
+    ## [22] R.oo_1.21.0                            
+    ## [23] plyr_1.8.4                             
+    ## [24] pcaPP_1.9-61                           
+    ## [25] pkgconfig_2.0.1                        
+    ## [26] TxDb.Hsapiens.UCSC.hg38.knownGene_3.4.0
+    ## [27] XML_3.98-1.6                           
+    ## [28] biomaRt_2.30.0                         
+    ## [29] zlibbioc_1.20.0                        
+    ## [30] xtable_1.8-2                           
+    ## [31] mvtnorm_1.0-6                          
+    ## [32] scales_0.5.0                           
+    ## [33] chemometrics_1.4.2                     
+    ## [34] BiocParallel_1.8.2                     
+    ## [35] tibble_1.3.4                           
+    ## [36] annotate_1.52.1                        
+    ## [37] IRanges_2.8.2                          
+    ## [38] ggplot2_2.2.1                          
+    ## [39] SummarizedExperiment_1.4.0             
+    ## [40] GenomicFeatures_1.26.4                 
+    ## [41] nnet_7.3-12                            
+    ## [42] BiocGenerics_0.20.0                    
+    ## [43] lazyeval_0.2.0                         
+    ## [44] magrittr_1.5                           
+    ## [45] mclust_5.2.3                           
+    ## [46] memoise_1.0.0                          
+    ## [47] evaluate_0.10.1                        
+    ## [48] R.methodsS3_1.7.1                      
+    ## [49] MASS_7.3-45                            
+    ## [50] class_7.3-14                           
+    ## [51] tools_3.3.3                            
+    ## [52] data.table_1.10.4-3                    
+    ## [53] org.Hs.eg.db_3.4.0                     
+    ## [54] matrixStats_0.52.2                     
+    ## [55] stringr_1.2.0                          
+    ## [56] S4Vectors_0.12.2                       
+    ## [57] munsell_0.4.3                          
+    ## [58] bindrcpp_0.2                           
+    ## [59] AnnotationDbi_1.36.2                   
+    ## [60] Biostrings_2.42.1                      
+    ## [61] pls_2.6-0                              
+    ## [62] som_0.3-5.1                            
+    ## [63] e1071_1.6-8                            
+    ## [64] GenomeInfoDb_1.10.3                    
+    ## [65] QDNAseq.hg19_1.4.0                     
+    ## [66] CGHbase_1.34.0                         
+    ## [67] rlang_0.1.4                            
+    ## [68] grid_3.3.3                             
+    ## [69] RCurl_1.95-4.8                         
+    ## [70] marray_1.52.0                          
+    ## [71] bitops_1.0-6                           
+    ## [72] rmarkdown_1.6                          
+    ## [73] DNAcopy_1.48.0                         
+    ## [74] gtable_0.2.0                           
+    ## [75] lars_1.2                               
+    ## [76] DBI_0.6-1                              
+    ## [77] R6_2.2.2                               
+    ## [78] GenomicAlignments_1.10.1               
+    ## [79] dplyr_0.7.4                            
+    ## [80] knitr_1.17                             
+    ## [81] rtracklayer_1.34.2                     
+    ## [82] bindr_0.1                              
+    ## [83] rprojroot_1.2                          
+    ## [84] stringi_1.1.5                          
+    ## [85] TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2
+    ## [86] parallel_3.3.3                         
+    ## [87] Rcpp_0.12.13                           
+    ## [88] rpart_4.1-10                           
+    ## [89] DEoptimR_1.0-8

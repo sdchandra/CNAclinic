@@ -22,9 +22,11 @@ vignette: >
 
 ```{r, eval=FALSE}
 
+install.packages("devtools") 
 library(devtools)
 
-install_github("sdchandra/CNAclinic")
+install_github("sdchandra/CNAclinic", build_vignettes = TRUE))
+library(CNAclinic)
 
 ```
 

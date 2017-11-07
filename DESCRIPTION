@@ -1,0 +1,43 @@
+Package: CNAclinic
+Type: Package
+Title: A Software Suite for Shallow Sequencing Copy Number Analysis
+Version: 1.0
+Date: 2017-11-01
+Author: Dineika Chandrananda
+Maintainer: <dineika.chandrananda@cruk.cam.ac.uk>
+Description: This package provides an end-to-end pipeline for copy number aberration (CNA) analysis of shallow coverage whole-genome sequencing (sWGS) data (< 0.5X).
+License: GPL
+Depends:
+    R (>= 3.3.3), methods
+Imports:
+    graphics,
+    stats,
+    utils,
+    R.utils (>= 1.28.4),
+    matrixStats (>= 0.13.1),
+    Rsamtools (>= 1.20),
+    QDNAseq (>= 1.10.0),
+    QDNAseq.hg19,
+    HMMcopy,
+    copynumber,
+    DNAcopy (>= 1.32.0),
+    PSCBS,
+    CGHbase,
+    CGHcall (>= 2.18.0),
+    Biobase (>= 2.18.0),
+    GenomicRanges, 
+    IRanges,
+    ggplot2, dplyr,
+    data.table,
+    scales,
+    annotate, org.Hs.eg.db,
+    TxDb.Hsapiens.UCSC.hg19.knownGene,
+    TxDb.Hsapiens.UCSC.hg38.knownGene
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Suggests:
+    knitr,
+    rmarkdown,
+    R.cache (>= 0.9.0),
+    digest
+VignetteBuilder: knitr

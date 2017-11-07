@@ -1,0 +1,2 @@
+load("/Users/chandr03/Documents/CNAclinic/CNAclinic/data/CNAData.RData")
+load("/Users/chandr03/Documents/CNAclinic/CNAclinic/data/exData.RData")

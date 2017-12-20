@@ -10,6 +10,7 @@ License: GPL
 Depends:
     R (>= 3.3.3), methods
 Imports:
+    biocViews,
     graphics,
     stats,
     utils,

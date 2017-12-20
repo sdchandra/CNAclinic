@@ -10,7 +10,7 @@
 #'
 #' @importFrom data.table as.data.table melt
 #' @importFrom dplyr group_by mutate %>%
-#' @import ggplot2 GenomicRanges chemometrics
+#' @import ggplot2 GenomicRanges
 #'
 #' @examples
 #'      \dontrun{

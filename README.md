@@ -514,15 +514,15 @@ sessionInfo()
     ##  [7] stats4_3.3.3                           
     ##  [8] blob_1.1.0                             
     ##  [9] Rsamtools_1.26.2                       
-    ## [10] yaml_2.1.14                            
+    ## [10] yaml_2.1.16                            
     ## [11] robustbase_0.92-8                      
     ## [12] impute_1.48.0                          
     ## [13] RSQLite_2.0                            
-    ## [14] backports_1.1.1                        
+    ## [14] backports_1.1.2                        
     ## [15] lattice_0.20-35                        
     ## [16] glue_1.2.0                             
     ## [17] limma_3.30.13                          
-    ## [18] digest_0.6.12                          
+    ## [18] digest_0.6.13                          
     ## [19] GenomicRanges_1.26.4                   
     ## [20] XVector_0.14.1                         
     ## [21] colorspace_1.3-2                       
@@ -590,7 +590,7 @@ sessionInfo()
     ## [83] rtracklayer_1.34.2                     
     ## [84] bit_1.1-12                             
     ## [85] bindr_0.1                              
-    ## [86] rprojroot_1.2                          
+    ## [86] rprojroot_1.3-1                        
     ## [87] stringi_1.1.6                          
     ## [88] TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2
     ## [89] parallel_3.3.3                         

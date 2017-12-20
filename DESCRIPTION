@@ -34,7 +34,7 @@ Imports:
     TxDb.Hsapiens.UCSC.hg19.knownGene,
     TxDb.Hsapiens.UCSC.hg38.knownGene
 biocViews: CopyNumberVariation, DNASeq, Genetics, GenomeAnnotation,
-        Preprocessing, QualityControl, Sequencing
+        Preprocessing, QualityControl, Sequencing, Annotation
 LazyData: TRUE
 RoxygenNote: 6.0.1
 Suggests:

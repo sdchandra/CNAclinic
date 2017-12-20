@@ -11,10 +11,8 @@ fontsize: 12pt
 bibliography: references.bib
 pandoc_args: --natbib
 biblio-style: plain
-vignette: >
-  %\VignetteIndexEntry{Analysing shallow-WGS data with CNAclinic}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+vignette: |
+  %\VignetteIndexEntry{Analysing shallow-WGS data with CNAclinic} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
 
 # An R package for end-to-end copy number analysis from shallow whole-genome sequencing

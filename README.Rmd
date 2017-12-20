@@ -7,14 +7,16 @@ output: github_document
 ---
 
 # CNAclinic: An R package for end-to-end copy number analysis from shallow whole-genome sequencing
-## Installation
+## Installation within R
 
 ```{r, eval=FALSE}
 
-install.packages("devtools") 
+install.packages("devtools")
+
 library(devtools)
 
 install_github("sdchandra/CNAclinic", build_vignettes = TRUE, dependencies=TRUE)
+
 library(CNAclinic)
 
 ```

@@ -6,14 +6,16 @@ title: "CNAclinic" author: Dineika Chandrananda date: Nov 1, 2017 output: github
 CNAclinic: An R package for end-to-end copy number analysis from shallow whole-genome sequencing
 ================================================================================================
 
-Installation
-------------
+Installation within R
+---------------------
 
 ``` r
-install.packages("devtools") 
+install.packages("devtools")
+
 library(devtools)
 
 install_github("sdchandra/CNAclinic", build_vignettes = TRUE, dependencies=TRUE)
+
 library(CNAclinic)
 ```
 

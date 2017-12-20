@@ -10,7 +10,6 @@ License: GPL
 Depends:
     R (>= 3.3.3), methods
 Imports:
-    biocViews,
     graphics,
     stats,
     utils,
@@ -34,6 +33,8 @@ Imports:
     annotate, org.Hs.eg.db,
     TxDb.Hsapiens.UCSC.hg19.knownGene,
     TxDb.Hsapiens.UCSC.hg38.knownGene
+biocViews: CopyNumberVariation, DNASeq, Genetics, GenomeAnnotation,
+        Preprocessing, QualityControl, Sequencing
 LazyData: TRUE
 RoxygenNote: 6.0.1
 Suggests:

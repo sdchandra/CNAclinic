@@ -12,7 +12,7 @@ Installation within R
 ``` r
 # Install annotation packages
 source("https://bioconductor.org/biocLite.R")
-biocLite(c("org.Hs.eg.db, TxDb.Hsapiens.UCSC.hg19.knownGene, TxDb.Hsapiens.UCSC.hg38.knownGene", "QDNAseq.hg19"))
+biocLite(c("org.Hs.eg.db", "TxDb.Hsapiens.UCSC.hg19.knownGene", "TxDb.Hsapiens.UCSC.hg38.knownGene", "QDNAseq.hg19"))
 
 # Installing CNAclinic
 install.packages("devtools")
